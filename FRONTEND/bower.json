@@ -1,0 +1,21 @@
+{
+  "name": "tomas",
+  "authors": [
+    "Lodolatomas <tomaslodola1@gmail.com>"
+  ],
+  "description": "segundoparcial",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap":"latest",
+    "jquery":"latest"
+  }
+}

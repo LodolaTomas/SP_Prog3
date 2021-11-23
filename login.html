@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="./FRONTEND/libs/bootstrap/dist/css/bootstrap.css" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"></link>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+    <script type="text/javascript" src="./FRONTEND/libs/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./FRONTEND/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <script type="text/javascript" src="./FRONTEND/login.js"></script>
+
+    <script src="./FRONTEND/style.css"></script>
+    <style>
+        .has-error label,
+        .has-error input,
+        .has-error textarea {
+            color: red;
+            border-color: red;
+        }
+        
+        .list-unstyled li {
+            font-size: 13px;
+            padding: 4px 0 0;
+            color: red;
+        }
+    </style>
+    <title>Segundo parcial de labo</title>
+</head>
+
+
+<body style="background-color: lightpink;">
+    <div id="errorLogin"></div>
+    <div class="container-fluid" style="width: 40rem;">
+        <h1 class="text-info">LOGIN</h1>
+        <div style="background-color:lightgray;">
+            <form class="px-5 py-3" class="needs-validation" id="formLogin" role="form" data-toggle="validator">
+                <div class="form-group row justify-content-center">
+                    <label class="col-sm-2 col-form-label" for="correo">Correo</label>
+                    <div class="input-group col-sm-10">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <span class="fas fa-envelope "></span>
+                            </div>
+                        </div>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+
+                    </div>
+                    <div class="help-block with-errors"></div>
+                </div>
+                <div class="form-group row justify-content-center">
+                    <label class="col-sm-2 col-form-label" for="clave">Clave</label>
+                    <div class="input-group col-sm-10">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <span class="fas fa-key"></span>
+                            </div>
+                        </div>
+                        <input type="password" data-minlength="4" class="form-control" id="inputPassword" data-error="Have atleast 4 characters" placeholder="Clave" required />
+                        <div class="help-block with-errors col-sm-11"></div>
+
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col "><input type="submit" value="Enviar" id="btnEnviar" class="btn btn-info" style="width: 100%;"></div>
+                    <div class="col"><input type="reset" value="Limpiar" class="btn btn-warning" style="width: 100%;">
+                    </div>
+                </div>
+            </form>
+
+            <div class="col-sm-12 ">
+                <div class="row mt-4 ">
+                    <button type="button" class="btn btn-success btn-block" data-toggle="modal" id="registro" data-target="#myModal">Quiero registrarme!</button>
+                </div>
+
+            </div>
+            <br>
+        </div>
+    </div>
+
+</body>
+
+
+</html>
